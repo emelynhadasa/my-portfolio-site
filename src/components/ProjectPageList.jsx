@@ -12,6 +12,7 @@ const ProjectPageList = () => {
           language={item.language}
           projectTitle={item.projectTitle}
           projectDef={item.projectDef}
+          projectUrl={item.projectUrl}
         />
       ))}
     </div>
