@@ -1,0 +1,149 @@
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+/* JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+:root {
+  --inter: 'Inter', sans-serif;
+  --jetbrains: 'JetBrains Mono', monospace;
+  --green-accent: #8cb359;
+  --grey-text: #7d8187;
+  --blue-link: #3377ce;
+  --black-bg: #1c1c1c;
+  --black-project-bg: #151515;
+  --grey-project-cards: #202022;
+}
+
+.projects-page {
+  height: 100%;
+  display: flex;
+  background-color: var(--black-project-bg);
+  margin: 0 -4rem;
+  padding: 5rem 3.5rem;
+}
+
+.project-header {
+  flex: 1;
+  min-width: 40%;
+  max-width: 40%;
+  padding: 20px;
+  position: sticky;
+  top: 0; /* Position at the top of the viewport */
+  z-index: 100;
+}
+
+.my-project-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-left: 2rem;
+}
+
+.project-header h1 {
+  font-family: var(--jetbrains);
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.project-subheader {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.project-header h1,
+.project-subheader,
+.language,
+.project-title {
+  color: #fafafa;
+}
+
+.project-definition {
+  color: var(--grey-text);
+}
+
+.project-header-p {
+  color: var(--grey-text);
+}
+
+.project-subheader,
+.project-header p {
+  font-family: var(--inter);
+}
+
+.project-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.grey-card {
+  background-color: rgba(32, 32, 34, 0.6) !important;
+  padding: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.grey-card:hover {
+  background-color: var(--green-accent) !important;
+}
+
+.grey-card:hover .language,
+.grey-card:hover .project-title,
+.grey-card:hover .project-definition {
+  color: var(--black-project-bg);
+}
+
+.language {
+  font-family: var(--inter);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-family: var(--jetbrains);
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.project-definition {
+  font-family: var(--inter);
+  font-size: 1rem;
+}
+
+/*
+    SCROLLBAR
+*/
+
+/* Set scrollbar width and color */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust this value to make the scrollbar thinner */
+  background-color: transparent; /* Background color behind the scrollbar */
+}
+
+/* Track styles */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Background color of the track */
+}
+
+/* Handle styles */
+::-webkit-scrollbar-thumb {
+  background-color: var(--grey-text); /* Color of the scrollbar handle */
+  border-radius: 2px; /* Border radius to make it rounded */
+}
+
+/* Handle hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--green-accent); /* Change color on hover */
+}

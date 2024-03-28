@@ -1,0 +1,386 @@
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+/* JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body, html{
+  height: 100%;
+  margin: 0 2rem;
+}
+
+#root { 
+  height: 100%;
+}
+
+:root {
+  --inter: 'Inter', sans-serif;
+  --jetbrains: "JetBrains Mono", monospace;
+  --green-accent: #8CB359; 
+  --grey-text: #5E6269; 
+  --blue-link: #3377CE;
+  --black-bg: #1C1C1C;
+  --black-project-bg: #151515;
+  --grey-project-cards: #202022;
+}
+
+.landing-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header-text {
+  text-align: center;
+  font-family: var(--inter);
+}
+
+.italic-landing-header {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.big-landing-header {
+  font-size: 3rem;
+}
+
+/*
+  MY JOURNEY
+*/
+
+.my-journey {
+  text-align: center;
+  margin: 0 5.5rem;
+}
+
+.my-journey-list {
+  margin-top: 3rem;
+}
+
+.my-journey-header h3 {
+  overflow: hidden;
+  text-align: center;
+  font-size: 2.25rem;
+  font-family: var(--jetbrains);
+  color: #333333;
+}
+
+.my-journey-header h3:before, 
+.my-journey-header h3:after {
+  background-color: #333333;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+}
+
+.my-journey-header h3:before,
+.my-work-header h3:before,
+.footer-header h3:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.my-journey-header h3:after,
+.my-work-header h3:after,
+.footer-header h3:before {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.my-journey-header p,
+.my-work-header p,
+.my-work-links a,
+.confession-box p,
+.footer p {
+  font-size: 1.125rem;
+  font-family: var(--inter);
+}
+
+.my-journey-item {
+  overflow: auto;
+  line-height: 1.6;
+  text-align: left;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding-bottom: 5rem;
+}
+
+.journey-image {
+  width: 10rem;
+  max-height: 10rem !important;
+  border-radius: 1rem;
+  float: left;
+  margin-right: 2rem;
+}
+
+.journey-content {
+  margin-left: 12rem;
+}
+
+.journey-title {
+  font-family: var(--jetbrains);
+  color: var(--blue-link);
+}
+
+.journey-time {
+  font-family: var(--inter);
+  color: var(--green-accent);
+}
+
+.journey-definition {
+  font-family: var(--inter);
+  color: var(--grey-text)
+}
+
+/*
+  MY WORK
+*/
+
+.my-work {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  text-align: center;
+  background-color: var(--black-bg);
+  color: #ffffff;
+  margin-left: -4rem; 
+  margin-right: -4rem;
+}
+
+.my-work-header h3 {
+  overflow: hidden;
+  text-align: center;
+  font-size: 2.25rem;
+  font-family: var(--jetbrains);
+  color: #ffffff;
+}
+
+.my-work-header h3:before, 
+.my-work-header h3:after {
+  background-color: #ffffff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+}
+
+.my-work-header p {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.my-work-links {
+  display: flex;
+  margin-top: 2.6rem;
+  justify-content: center;
+}
+
+.my-work-links h3 {
+  font-family: var(--jetbrains);
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.my-work-links a {
+  color: var(--blue-link);
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.my-project-links {
+  margin-right: 3rem;
+}
+
+.leaf-icon {
+  object-fit: cover;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 0.8rem;
+}
+
+.laptop-icon,
+.note-icon {
+  object-fit: cover;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/*
+  CONFESSION 
+  BOX 
+*/
+
+.confession-box {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  text-align: center;
+  justify-content: center;
+  background-image: url('../../public/images/gradient-bg.jpg');
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  color: #ffffff;
+  margin-left: -4rem; 
+  margin-right: -4rem;
+
+  /*Set the contents inside confession is flex and become center in column direction*/
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+
+}
+
+.confession-box h2 {
+  font-size: 2rem;
+  margin: 0 17rem;
+  font-family: var(--jetbrains);
+  margin-bottom: 1.4rem;
+}
+
+.confession-box p {
+  margin: 0 17rem;
+  line-height: 1.5;
+  margin-bottom: 1.4rem;
+}
+
+.wink-icon {
+  object-fit: cover;
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.confession-form {
+  border-radius: 2rem;
+  height: 7rem !important;
+  width: 27rem;
+  padding: 1.2rem;
+}
+
+.confession-form::placeholder {
+  font-family: var(--inter); 
+  text-align: left; 
+  vertical-align: middle; 
+  line-height: 4rem;
+}
+
+.confession-btn {
+  margin-top: 1rem;
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 1.2rem;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 1rem;
+  font-family: var(--inter);
+}
+
+.confession-btn:focus {
+  background-color: #FCFCFD;
+  color: #36395A;
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.confession-btn:hover {
+  background-color: #FCFCFD;
+  color: #36395A;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.confession-btn:active {
+  background-color: #FCFCFD;
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+/*
+  FOOTER
+*/
+
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3.5rem;
+  background-color: var(--black-bg);
+  margin-left: -4rem; 
+  margin-right: -4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer img {
+  height: 12rem;  
+}
+
+.footer p {
+  color: #ffffff;
+  font-family: var(--inter);
+}
+
+.fire-icon {
+  object-fit: cover;
+  height: 1.5rem !important;
+}
+
+.footer-socmed {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.socmed-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.socmed-icons a {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.socmed-icons img {
+  width: 4rem;
+  height: 4rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.socmed-icons img:hover {
+  transform: scale(1.2);
+}
+
