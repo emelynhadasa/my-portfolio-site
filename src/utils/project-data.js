@@ -84,6 +84,13 @@ const getProjectData = () => {
       projectDef: 'Enable user to input keyword and app will give output of the word’s definition and Part-of-Speech. Also audio of word’s pronunciation.',
       projectUrl: 'https://github.com/emelynhadasa/word-look-up',
     },
+    {
+      id: 13,
+      language: 'HTML CSS JS',
+      projectTitle: 'Purchase-Order Management System',
+      projectDef: 'A Purchase-Order Management System (POMS) that is created by my campus team. Including features such as: Supplier, Item, PO, Bills, and Expenditure. ',
+      projectUrl: 'https://github.com/emelynhadasa/purchasing-system',
+    },
   ]
 }
 

@@ -11,7 +11,7 @@ class MyWork extends React.Component {
       <div className='my-work'>
         <div className='my-work-header'>
           <h3>My work recaps</h3><br/>
-          <p>I am passionate to create something valuable. <img src="../../public/images/plant.png" className='leaf-icon'/></p>
+          <p>I am passionate to create something valuable yet easy. <img src="../../public/images/plant.png" className='leaf-icon'/></p>
         </div>
         <div className='my-work-links'>
           <div className='my-project-links'>
