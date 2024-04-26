@@ -27,17 +27,30 @@ body, html{
   --black-bg: #1C1C1C;
   --black-project-bg: #151515;
   --grey-project-cards: #202022;
+  --purple-bg: url('../../public/images/gradient-bg2.png');
 }
 
 .landing-header {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between; 
+  text-align: left;
   height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
+.landing-logo {
+  margin-top: auto;
+}
+
+.landing-logo img {
+  height: 30rem;
+  width: auto;
 }
 
 .header-text {
-  text-align: center;
+  text-align: left;
+  margin: 0 3rem;
   font-family: var(--inter);
 }
 
@@ -67,6 +80,7 @@ body, html{
   overflow: hidden;
   text-align: center;
   font-size: 2.25rem;
+  margin-top: 3rem;
   font-family: var(--jetbrains);
   color: #333333;
 }
@@ -395,4 +409,3 @@ body, html{
 .socmed-icons img:hover {
   transform: scale(1.2);
 }
-

@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/style.css'
+import './styles/responsive.css'
 import './styles/project-style.css'
 import Routes from './routes/Routes'
 

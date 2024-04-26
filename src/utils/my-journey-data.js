@@ -23,6 +23,13 @@ const getData = () => {
     },
     {
       id: 4,
+      journeyTitle: 'Web Database Developer',
+      journeyTime: 'February 2024 - present',
+      journeyDef: 'An advantage of being a front-seater is being picked by our Head of Study Program. My team and I work on a new feature for our campus website.',
+      imageUrl: '../../public/images/pu.png',
+    },
+    {
+      id: 5,
       journeyTitle: 'Writing',
       journeyTime: 'Endless',
       journeyDef: 'I love pouring love through the formation of diction. I love making novels, short stories, especially essays that made me join competitions and got 2 national essay awards. That was not an achievement, it’s a prove that I love words. ',
