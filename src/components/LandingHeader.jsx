@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from 'react'
+import MyLogo from '/images/landing-logo.png'
 
 const LandingHeader = () => {
   useEffect(() => {
@@ -33,7 +34,7 @@ const LandingHeader = () => {
         </p>
       </div>
       <div className='landing-logo'>
-        <img src="../../public/images/landing-logo.png" alt="landing-logo"/>
+        <img src={MyLogo} alt="landing-logo"/>
       </div>
     </div>
   )
