@@ -282,13 +282,13 @@
 
   .landing-text {
     position: relative;
-    z-index: 2; /* Ensure the text is on top */
+    z-index: 2; 
   }
 
   .landing-logo {
     margin-top: 20rem;
     bottom: 0;
-    z-index: 1; /* Place the image behind the text */
+    z-index: 1;
   }
 
   .landing-logo img {
@@ -317,6 +317,23 @@
 
   .leaf-icon {
     margin-left: -1rem;
+  }
+
+  .fire-icon {
+    object-fit: cover;
+    height: 2.5rem !important;
+  }
+
+  .mail-icon {
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  .wink-icon {
+    object-fit: cover;
+    height: 2rem;
+    width: 2rem;
   }
 
   .my-work-links Link,
