@@ -41,8 +41,7 @@ html {
   flex: 1;
   min-width: 40%;
   max-width: 40%;
-  padding: 2rem;
-  padding-left: 5.5rem;
+  padding: 1.8rem;
   position: sticky;
   top: 0; 
   z-index: 100;
