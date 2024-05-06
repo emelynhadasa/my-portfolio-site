@@ -277,7 +277,24 @@
   }
 
   .landing-header {
-    height: 121.5rem;
+    height: 57rem;
+  }
+
+  .landing-text {
+    position: relative;
+    z-index: 2; /* Ensure the text is on top */
+  }
+
+  .landing-logo {
+    margin-top: 20rem;
+    bottom: 0;
+    z-index: 1; /* Place the image behind the text */
+  }
+
+  .landing-logo img {
+    height: 40rem;
+    margin-left: -11rem;
+    width: auto;
   }
 
   .header-text {
