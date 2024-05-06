@@ -384,4 +384,23 @@
     width: 5rem;
     height: 5rem;
   } 
+
+  /* PROJECTS PAGE */
+  .projects-page {
+    min-height: 130rem !important;
+    display: flex;
+    background-color: var(--black-project-bg);
+    margin: 0 -4rem;
+    padding: 5rem 3.5rem;
+  }
+
+  .project-header {
+    flex: 1;
+    min-width: 40%;
+    max-width: 40%;
+    padding: 20px;
+    position: sticky;
+    top: 0; /* Position at the top of the viewport */
+    z-index: 100;
+  }
 }
