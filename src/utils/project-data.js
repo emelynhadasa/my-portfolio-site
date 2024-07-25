@@ -91,6 +91,34 @@ const getProjectData = () => {
       projectDef: 'A Purchase-Order Management System (POMS) that is created by my campus team. Including features such as: Supplier, Item, PO, Bills, and Expenditure. ',
       projectUrl: 'https://github.com/emelynhadasa/purchasing-system',
     },
+    {
+      id: 14,
+      language: 'HTML CSS ReactJS, Leaflet',
+      projectTitle: 'Mini Restaurants Mapsite',
+      projectDef: 'A website utilizing Leaflet, a JavaScript library, to map the region of Kos behind PLN for President University students to explore hidden wartegs.',
+      projectUrl: 'https://github.com/emelynhadasa/warteg-mapsite',
+    },
+    {
+      id: 15,
+      language: 'React and Laravel',
+      projectTitle: 'Mediqueue Clinic App',
+      projectDef: 'A website that streamline the processes within a clinic, in aim to improve conventional clinic queueing process.',
+      projectUrl: 'https://github.com/orgs/MediQueue-Dicoding-Bootcamp-Capstone/repositories',
+    },
+    {
+      id: 16,
+      language: 'MERN Stack',
+      projectTitle: 'MERN Integration Challenge',
+      projectDef: 'As a completion of MERN certification challenge.',
+      projectUrl: 'https://github.com/emelynhadasa/express-cikarang',
+    },
+    {
+      id: 17,
+      language: 'React and JavaSpring',
+      projectTitle: 'FreshFold Laundry Management System',
+      projectDef: 'A laundry management system that streamline the process of laundry and digitalize conventional bills.',
+      projectUrl: 'https://github.com/emelynhadasa/lms-fe',
+    },
   ]
 }
 
